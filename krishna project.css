@@ -26,6 +26,12 @@ body{
     background:var(--cream);
     color:var(--charcoal);
     overflow-x:hidden;
+    min-width:0;
+}
+
+section,
+footer{
+    width:100%;
 }
 
 
@@ -146,7 +152,7 @@ header{
 
 .slider{
 
-    width:700px;
+    width:min(100%,700px);
     height:400px;
 
     overflow:hidden;
@@ -167,7 +173,8 @@ header{
 
 .slides img{
 
-    width:700px;
+    width:33.333%;
+    flex:0 0 33.333%;
     height:400px;
 
     object-fit:cover;
@@ -181,11 +188,11 @@ header{
     }
 
     33%{
-        transform:translateX(-700px);
+        transform:translateX(-33.333%);
     }
 
     66%{
-        transform:translateX(-1400px);
+        transform:translateX(-66.666%);
     }
 
     100%{
@@ -227,6 +234,7 @@ header{
     padding:6rem 5%;
 
     background:rgb(251,219,80);
+    width:100%;
 }
 
 .menu h2{
@@ -290,6 +298,10 @@ header{
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 
     gap:2rem;
+
+    max-width:1200px;
+
+    margin:0 auto;
 }
 
 
@@ -521,6 +533,7 @@ footer {
     .hero {
         grid-template-columns:1fr;
         text-align: center;
+        gap:2rem;
     }
 
     .hero-image, .hero-content {
@@ -542,6 +555,21 @@ footer {
 
         width:100%;
         height:300px;
+    }
+
+    .menu{
+        padding:5rem 1rem;
+    }
+
+    .menu-grid{
+        grid-template-columns:1fr;
+        gap:1.5rem;
+    }
+
+    .menu-card{
+        max-width:420px;
+        width:100%;
+        margin:0 auto;
     }
 
 }
