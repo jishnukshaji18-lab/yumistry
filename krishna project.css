@@ -554,4 +554,45 @@ footer {
     }
 
 }
+
+
+/* MOBILE HEADER FIX */
+@media screen and (max-width:768px){
+
+    header{
+        padding:0.8rem 5%;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+
+    .logo{
+        font-size:1.5rem;
+    }
+
+    .nav-links{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        flex-direction:row;
+        flex-wrap:wrap;
+        gap:1rem;
+        margin:0.8rem 0;
+    }
+
+    .nav-links a{
+        font-size:0.95rem;
+    }
+
+    .cta-btn{
+        padding:0.6rem 1.4rem;
+        font-size:0.9rem;
+        border-radius:25px;
+    }
+
+    .hero{
+        padding-top:9rem;
+    }
+}
 }
