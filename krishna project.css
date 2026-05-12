@@ -506,34 +506,25 @@ footer {
 
 @media(max-width:786px){
     header {
-        flex-direction: column; /* Stacks logo, nav, and button vertically */
+        flex-direction: column;
         padding: 15px;
         text-align: center;
     }
 
     .nav-links {
         display: flex;
-        flex-direction: column; /* Vertical links */
+        flex-direction: column;
         gap: 10px;
         margin: 15px 0;
     }
 
     .hero {
-        flex-direction: column-reverse; /* Put image above text on mobile */
+        grid-template-columns:1fr;
         text-align: center;
     }
 
     .hero-image, .hero-content {
         width: 100%;
-    .container{
-        flex-direction: column;
-    }
-
-    .hero{
-
-        grid-template-columns:1fr;
-
-        text-align:center;
     }
 
     .nav-links{
@@ -594,5 +585,4 @@ footer {
     .hero{
         padding-top:9rem;
     }
-}
 }
