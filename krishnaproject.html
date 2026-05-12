@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- CHARACTER SET -->
+    <meta charset="UTF-8">
+
+    <!-- RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    <title>Yumistry | Artisan Pizza</title>
+
+    <!-- GOOGLE FONT -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="krishna project.css">
+
+
+    <!-- INTERNAL CSS -->
+    <style>
+
+        .slider{
+            width:700px;
+            height:400px;
+            margin:auto;
+            overflow:hidden;
+            border-radius:20px;
+        }
+
+        .slides{
+            display:flex;
+            width:300%;
+            animation:slide 9s infinite;
+        }
+
+        .slides img{
+            width:700px;
+            height:400px;
+            object-fit:cover;
+        }
+
+        @keyframes slide{
+
+            0%{
+                transform:translateX(0);
+            }
+
+            33%{
+                transform:translateX(-700px);
+            }
+
+            66%{
+                transform:translateX(-1400px);
+            }
+
+            100%{
+                transform:translateX(0);
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <!-- LOGO -->
+        <div class="logo">
+
+            Yumistry
+
+        </div>
+<!-- 
+         This is the only new structural element needed
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div> -->
+
+        <!-- NAVIGATION -->
+        <nav class="nav-links">
+
+            <a href="#menu">Menu</a>
+
+            <a href="#features">Features</a>
+
+            <a href="#testimonials">Testimonials</a>
+
+            <a href="#about">About</a>
+
+        </nav>
+
+
+        <!-- ORDER BUTTON -->
+        <a href="order.html">
+
+            <button class="cta-btn">
+
+                Order Now
+
+            </button>
+
+        </a>
+
+    </header>
+
+
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <!-- HERO TEXT -->
+        <div class="hero-content">
+
+            <h1>
+
+                 Authentic flavors served fresh
+
+            </h1>
+
+            <p>
+
+            <h1>
+
+
+<p>
+    From wood-fired pizzas to rich pasta and crunchy fried bites,
+    enjoy every flavor made fresh with love and premium ingredients.
+</p>
+
+            </p>
+
+            <a href="#menu">
+                 <button class="filter-btn active" data-filter="all">EXPLORE MENU</button>
+
+
+            </a>
+
+        </div>
+
+
+
+        <!-- HERO IMAGE -->
+        <div class="hero-image">
+
+            <div class="slider">
+
+                <div class="slides">
+
+                    <img src="artisan pizza.jpg" alt="Pizza">
+
+                    <img src="chicken-fajita-pasta.jpg" alt="Pasta">
+
+                    <img src="korean-spicy-.JPG" alt="Chicken">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= MENU SECTION ================= -->
+
+    <section class="menu" id="menu">
+
+        <h2>
+
+            Our Menu
+
+        </h2>
+
+
+        <!-- FILTER BUTTONS -->
+        <div class="menu-filters">
+
+            <button class="filter-btn active" data-filter="all">
+
+                All
+
+            </button>
+
+            <button class="filter-btn" data-filter="pizza">
+
+                Pizzas
+
+            </button>
+
+            <button class="filter-btn" data-filter="pasta">
+
+                Pasta
+
+            </button>
+
+            <button class="filter-btn" data-filter="chicken">
+
+                Chicken
+
+            </button>
+
+        </div>
+
+
+
+        <!-- MENU GRID -->
+        <div class="menu-grid">
+
+
+            <!-- ITEM 1 -->
+            <div class="menu-card" data-category="pizza">
+
+                <img src="classic-margherita-pizza.jpg" height="200px">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        Classic Margherita
+
+                    </h3>
+
+                    <p>
+
+                        San Marzano tomatoes,
+                        fresh mozzarella, basil
+
+                    </p>
+
+                    <div class="price">
+
+                        ₹455
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ITEM 2 -->
+            <div class="menu-card" data-category="pizza">
+
+                <img src="pepperoni Pizza.jpg" height="200px">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        Pepperoni Pizza
+
+                    </h3>
+
+                    <p>
+
+                        Spicy pepperoni,
+                        mozzarella and tomato sauce
+
+                    </p>
+
+                    <div class="price">
+
+                        ₹500
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ITEM 3 -->
+            <div class="menu-card" data-category="pasta">
+
+                <img src="Spaghetti Carbonara.jpg" height="200px">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        Spaghetti Carbonara
+
+                    </h3>
+
+                    <p>
+
+                        Classic Roman pasta with eggs,
+                        cheese and pancetta
+
+                    </p>
+
+                    <div class="price">
+
+                        ₹350
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ITEM 4 -->
+            <div class="menu-card" data-category="pizza">
+
+                <img src="diavolapizza.jpg" height="200px">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        DIAVOLA PIZZA
+
+                    </h3>
+
+                    <p>
+
+                        Tomato sauce, mozzarella,
+                        spicy salami and chilli pepper
+
+                    </p>
+
+                    <div class="price">
+
+                        ₹546
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ITEM 5 -->
+            <div class="menu-card" data-category="pizza">
+
+                <img src="PARMIGIANA.jpg" height="200px">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        PARMIGIANA PIZZA
+
+                    </h3>
+
+                    <p>
+
+                        Tomato sauce, mozzarella,
+                        eggplants and parmesan flakes
+
+                    </p>
+
+                    <div class="price">
+
+                        ₹446
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ITEM 6 -->
+            <div class="menu-card" data-category="chicken">
+
+                <img src="korean-spicy-.JPG" height="200px">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        K-CLASSIC SPICY CHICKEN
+
+                    </h3>
+
+                    <p>
+
+                        Crispy fried chicken with
+                        sweet and spicy chilli sauce
+
+                    </p>
+
+                    <div class="price">
+
+                        ₹315
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ITEM 7 -->
+            <div class="menu-card" data-category="pizza">
+
+                <img src="QUATTRO STAGIONI PIZZA.JPG" height="200px">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        QUATTRO STAGIONI PIZZA
+
+                    </h3>
+
+                    <p>
+
+                        Tomato sauce, mozzarella,
+                        mushrooms, olives and oregano
+
+                    </p>
+
+                    <div class="price">
+
+                        ₹448
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ITEM 8 -->
+            <div class="menu-card" data-category="pasta">
+
+                <img src="chicken-fajita-pasta.jpg" height="300px">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        CHICKEN FAJITA PASTA
+
+                    </h3>
+
+                    <p>
+
+                        Penne pasta, chicken breast,
+                        garlic, onion and oregano
+
+                    </p>
+
+                    <div class="price">
+
+                        ₹360
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ITEM 9 -->
+            <div class="menu-card" data-category="pasta">
+
+                <img
+                    src="CHICKEN-ALFREDO.jpg"
+                    height="300px"
+                    width="100px">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        FETTUCCINE ALFREDO PASTA
+
+                    </h3>
+
+                    <p>
+
+                        Butter, parmesan cheese,
+                        garlic and heavy cream
+
+                    </p>
+
+                    <div class="price">
+
+                        ₹395
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ITEM 10 -->
+            <div class="menu-card" data-category="chicken">
+
+                <img src="maxresdefault.JPG" height="200px">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        TIKKA CHICKEN
+
+                    </h3>
+
+                    <p>
+
+                        Boneless chicken, curd,
+                        coriander powder and cumin powder
+
+                    </p>
+
+                    <div class="price">
+
+                        ₹225
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ITEM 11 -->
+            <div class="menu-card" data-category="chicken">
+
+                <img src="crispy-golden-fried-chicken.jpg" height="200px">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        CRISPY GOLDEN FRIED CHICKEN
+
+                    </h3>
+
+                    <p>
+
+                        Salt, pepper, chilli powder,
+                        garlic paste and soy sauce
+
+                    </p>
+
+                    <div class="price">
+
+                        ₹550
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ITEM 12 -->
+            <div class="menu-card" data-category="chicken">
+
+                <img src="poppchicken.jpg" height="200px">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        Popcorn Chicken
+
+                    </h3>
+
+                    <p>
+
+                        Popcorn kernels,
+                        oil and salt
+
+                    </p>
+
+                    <div class="price">
+
+                        ₹235
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FEATURES SECTION ================= -->
+
+    <section class="features" id="features">
+
+        <div class="features-grid">
+
+            <!-- FEATURE 1 -->
+            <div class="feature-card">
+
+                <i class="fas fa-fire"></i>
+
+                <h3>
+
+                    Wood-Fired Oven
+
+                </h3>
+
+                <p>
+
+                    Authentic 900°F brick oven cooking
+
+                </p>
+
+            </div>
+
+
+            <!-- FEATURE 2 -->
+            <div class="feature-card">
+
+                <i class="fas fa-seedling"></i>
+
+                <h3>
+
+                    Local Ingredients
+
+                </h3>
+
+                <p>
+
+                    Sourced from local farms daily
+
+                </p>
+
+            </div>
+
+
+            <!-- FEATURE 3 -->
+            <div class="feature-card">
+
+                <i class="fas fa-clock"></i>
+
+                <h3>
+
+                    Fast Delivery
+
+                </h3>
+
+                <p>
+
+                    30-minute guarantee or free
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= TESTIMONIAL SECTION ================= -->
+
+    <section class="testimonials" id="testimonials">
+
+        <h2>
+
+            What Our Customers Say
+
+        </h2>
+
+
+        <div class="testimonial-grid">
+
+            <!-- TESTIMONIAL 1 -->
+            <div class="testimonial-card">
+
+                <img src="customer-profile.jpg"
+                     height="80px"
+                     alt="Customer">
+
+                <h3>
+
+                    Angel Roshna
+
+                </h3>
+
+                <p>
+
+                    "Delicious food and great quality.
+                    Will order again!"
+
+                </p>
+
+            </div>
+
+
+
+            <!-- TESTIMONIAL 2 -->
+            <div class="testimonial-card">
+
+                <img src="004.jpg"
+                     height="80px"
+                     alt="Customer">
+
+                <h3>
+
+                    Sarah Johnson
+
+                </h3>
+
+                <p>
+
+                    "The best pizza I've ever had!
+                    Fresh and flavorful."
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section id="about">
+
+        <h2>
+
+            About Our Yumistry
+
+        </h2>
+
+        <p>
+
+            Welcome to Yumistry — where flavor meets happiness!  
+We serve delicious pizzas, creamy pasta, and crispy fried chicken made with fresh ingredients and bold taste. At Yumistry, every meal is prepared with passion to give you a memorable food experience. Enjoy hot, cheesy, crispy, and satisfying bites every time!
+
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+
+            <!-- FOOTER COLUMN 1 -->
+            <div class="footer-col">
+
+               <h3>Yumistry</h3>
+<p>Crafted with flavor, served with love — hot pizza,<br>
+     creamy pasta, and crispy chicken made to satisfy every craving.</p>
+
+            </div>
+
+
+
+            <!-- FOOTER COLUMN 2 -->
+            <div class="footer-col">
+
+                <h3>
+
+                    Quick Links
+
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#menu">Menu</a>
+                    </li>
+
+                    <li>
+                        <a href="#features">Features</a>
+                    </li>
+
+                    <li>
+                        <a href="#testimonials">Testimonials</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- FOOTER COLUMN 3 -->
+            <div class="footer-col">
+
+                <h3>
+
+                    Contact
+
+                </h3>
+
+                <p>
+
+                    123 Pizza Street, NY
+
+                </p>
+
+                <p>
+
+                    +91 9595959595
+
+                </p>
+
+                <p>
+
+                    info@pizzaparadiso.com
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SOCIAL LINKS -->
+        <div class="social-links">
+
+            <a href="https://instagram.com">
+
+                <i class="fab fa-instagram"></i>
+
+            </a>
+
+            <a href="https://facebook.com">
+
+                <i class="fab fa-facebook"></i>
+
+            </a>
+
+            <a href="https://twitter.com">
+
+                <i class="fab fa-twitter"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- COPYRIGHT -->
+        <div class="copyright">
+
+            © 2026 Yumistry. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- EXTERNAL JS -->
+    <script src="krishna project.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+    background:#f5f5f5;
+}
+
+.slider{
+    width:700px;
+    height:400px;
+    margin:auto;
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.slides{
+    display:flex;
+    width:300%;
+    animation:slide 9s infinite;
+}
+
+.slides img{
+    width:700px;
+    height:400px;
+    object-fit:cover;
+}
+
+@keyframes slide{
+
+    0%{
+        transform:translateX(0);
+    }
+
+    33%{
+        transform:translateX(-700px);
+    }
+
+    66%{
+        transform:translateX(-1400px);
+    }
+
+    100%{
+        transform:translateX(0);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="slider">
+    <div class="slides">
+        <img src="classic chiken margherita pizza.jpg">
+        <img src="k-CLASSIC SPICY CHICKEN.JPG">
+        <img src="pepperoni Pizza.jpg">
+    </div>
+</div>
+
+</body>
+</html>

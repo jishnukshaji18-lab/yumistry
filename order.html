@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORDER NOW</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color:#ffe0b2;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:90%;
+    max-width:500px;
+    margin:50px auto;
+    background:rgb(243, 240, 200);
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    color:#2a2306;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    margin-bottom:20px;
+    border:1px solid #b74d10;
+    border-radius:8px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:#fa860b;
+    color:rgb(255, 255, 255);
+    font-size:18px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#a45f1f;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Order Online </h1>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="enter 10 digit mobile number"
+        pattern="[0-9]{10}"
+        maxlength="10" required>
+
+        <select required>
+            <option value="">Select items</option>
+            <option>Classic Margherita</option>
+            <option>Pepperoni Pizza</option>
+            <option>Spaghetti Carbonara</option>
+            <option>DIAVOLA PIZZA</option>
+            <option>PARMIGIANA PIZZA</option>
+            <option>k-CLASSIC SPICY CHICKEN</option>
+            <option>QUATTRO STAGIONI PIZZA</option>
+            <option>CHICKEN FAJITA PASTA</option>
+            <option>FETTUCCINE ALFREDO PASTA</option>
+            <option>TIKKA CHICKEN</option>
+            <option>CRISPY GOLDEN FRIED CHICKEN</option>
+            <option>popcorn chicken</option>
+
+        </select>
+
+        <textarea rows="4" placeholder="Your Address"></textarea>
+
+        <button type="submit">Place Order</button>
+    </form>
+</div>
+
+</body>
+</html>
